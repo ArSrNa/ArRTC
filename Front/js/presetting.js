@@ -48,7 +48,7 @@ class Presetting {
 function genTestUserSig(userID) {
   var usersig;
   $.ajax({
-    url:'https://api.arsrna.cn/release/trtcusersig',
+    url:'https://api.arsrna.cn/release/trtcusersig/ArRTC',
     type:'GET',
     data:{user:userID},
     dataType:'json',
