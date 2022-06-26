@@ -271,9 +271,13 @@ class RtcClient {
           //   return;
           // }
           remoteStream.videoPlayer_.element_.controls = true;
+          $('video').css('object-fit','contain');
+          console.log('修改css');
         });
       } else {
         remoteStream.play(id);
+        $('video').css('object-fit','contain');
+          console.log('修改css');
       }
       //添加“摄像头未打开”遮罩
       let mask = $('#mask_main').clone();

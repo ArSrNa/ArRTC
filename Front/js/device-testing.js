@@ -801,6 +801,7 @@ async function testUplinkNetworkQuality() {
   });
 
   const localStream = TRTC.createStream({ audio: true, video: true });
+  localStream.setAudioProfile('high-stereo');
   await localStream.initialize();
 
   window.uplinkClient.on('network-quality', async event => {
